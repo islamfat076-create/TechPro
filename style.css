@@ -1,0 +1,51 @@
+/* Fonts & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+body { background: #f5f5f5; line-height: 1.6; color: #333; }
+
+/* Container */
+.container { width: 90%; margin: auto; }
+
+/* Header */
+header { background: #0A2540; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+.header-container { display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: 600; }
+nav a:hover { color: #3A86FF; }
+.header-btn { background: #3A86FF; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+.header-btn:hover { background: #2F6CD0; }
+
+/* Hero */
+.hero { background: linear-gradient(to right, #0A2540, #3A86FF); color: white; padding: 120px 0; text-align: center; }
+.hero h1 { font-size: 3em; margin-bottom: 15px; }
+.hero p { font-size: 1.2em; margin-bottom: 20px; }
+.hero .btn { background: #FFD166; color: #0A2540; font-weight: bold; padding: 12px 25px; border-radius: 50px; transition: 0.3s; }
+.hero .btn:hover { background: #F4A261; }
+
+/* Sections */
+section { padding: 80px 0; text-align: center; }
+section h2 { font-size: 2em; margin-bottom: 40px; color: #0A2540; }
+
+/* Cards */
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.card { background: white; padding: 30px; border-radius: 15px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 15px 25px rgba(0,0,0,0.2); }
+
+/* Portfolio Grid */
+.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.item { background: white; padding: 50px 30px; border-radius: 15px; width: 200px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer; }
+.item:hover { transform: translateY(-10px); }
+
+/* Pricing Plans */
+.plans { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.plan { background: white; padding: 30px; border-radius: 15px; width: 220px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer; }
+.plan.highlight { background: #3A86FF; color: white; }
+.plan:hover { transform: translateY(-10px); }
+
+/* Contact Form */
+form { display: flex; flex-direction: column; width: 350px; margin: auto; gap: 15px; }
+input, textarea { padding: 12px; border-radius: 8px; border: 1px solid #ccc; }
+textarea { resize: none; height: 120px; }
+form button { background: #3A86FF; color: white; padding: 12px; border-radius: 50px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+form button:hover { background: #2F6CD0; }
+
+/* Footer */
+footer { background: #0A2540; color: white; padding: 20px 0; text-align: center; }

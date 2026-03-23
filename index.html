@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro - حلول رقمية احترافية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <h2 class="logo">TechPro</h2>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#services">الخدمات</a>
+            <a href="#portfolio">أعمالنا</a>
+            <a href="#pricing">الأسعار</a>
+            <a href="#contact">تواصل</a>
+        </nav>
+        <button class="btn header-btn" onclick="scrollToSection('contact')">ابدأ الآن</button>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container hero-container">
+        <h1>نطوّر حلول رقمية باحترافية</h1>
+        <p>نساعدك في بناء حضور رقمي قوي وتحقيق النجاح لعملك</p>
+        <button class="btn" onclick="scrollToSection('services')">اطلب خدمة</button>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2>خدماتنا</h2>
+        <div class="cards">
+            <div class="card"><h3>تصميم مواقع</h3><p>تصميم واجهات عصرية متجاوبة لجميع الأجهزة</p></div>
+            <div class="card"><h3>تطوير تطبيقات</h3><p>تطبيقات ويب وموبايل مبتكرة واحترافية</p></div>
+            <div class="card"><h3>تسويق رقمي</h3><p>استراتيجيات تسويق رقمية لزيادة عملائك</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2>أعمالنا</h2>
+        <div class="grid">
+            <div class="item">مشروع 1</div>
+            <div class="item">مشروع 2</div>
+            <div class="item">مشروع 3</div>
+            <div class="item">مشروع 4</div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="pricing">
+    <div class="container">
+        <h2>الأسعار</h2>
+        <div class="plans">
+            <div class="plan"><h3>أساسي</h3><p>مناسبة للشركات الصغيرة</p></div>
+            <div class="plan highlight"><h3>احترافي</h3><p>للمشاريع المتوسطة والكبيرة</p></div>
+            <div class="plan"><h3>متقدم</h3><p>حلول كاملة مع دعم متواصل</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>تواصل معنا</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" placeholder="الاسم" name="name" required>
+            <input type="email" placeholder="البريد الإلكتروني" name="email" required>
+            <textarea placeholder="رسالتك" name="message" required></textarea>
+            <button class="btn" type="submit">إرسال</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2026 TechPro. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
